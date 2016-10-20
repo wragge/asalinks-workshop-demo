@@ -22,7 +22,7 @@ $(function() {
         data = shuffle(data);
         data = data.slice(0, 20)
         $.each(data, function(index, record) {
-            $('#widget').append('<a title="' + record.title + '" class="grid-item pull-left" href="' + record.link + '"><img width="50" height="50" alt="' + record.title + '" src="/faces/' + record.image + '"></a>');
+            $('#widget').append('<a title="' + record.title + '" class="grid-item pull-left" href="' + record.link + '"><img width="50" height="50" alt="' + record.title + '" src="faces/' + record.image + '"></a>');
         });
 
     });
