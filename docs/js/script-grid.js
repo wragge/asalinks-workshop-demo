@@ -18,8 +18,8 @@ $(function() {
           return array;
     }
 
-    $('#grid').hide();
-    $('#status').show();
+    //$('#grid').hide();
+    //$('#status').show();
     $.getJSON( "js/records.json", function(data) {
         data = shuffle(data);
         $.each(data, function(index, record) {
@@ -32,7 +32,7 @@ $(function() {
         // layout Packery after each image loads
         $grid.imagesLoaded().progess(function() {
             $('#status').hide();
-            $grid.show();
+            //$grid.show();
             $grid.packery();
         });
 
