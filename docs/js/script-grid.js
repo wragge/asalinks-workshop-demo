@@ -30,7 +30,7 @@ $(function() {
             gutter: 5
         });
         // layout Packery after each image loads
-        $grid.imagesLoaded(function() {
+        $grid.imagesLoaded().progess(function() {
             $('#status').hide();
             $grid.show();
             $grid.packery();
