@@ -3,7 +3,7 @@ import cv2
 import cv2.cv as cv
 
 CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
-IMAGE_DIR = os.path.join(CURRENT_DIR, 'docs', 'images')
+IMAGE_DIR = os.path.join(CURRENT_DIR, 'images')
 CROP_DIR = os.path.join(CURRENT_DIR, 'faces')
 
 # Change this if necessary

@@ -128,7 +128,7 @@ def save_faces():
     faces = []
     with open('data/records.json', 'rb') as data:
         records = json.load(data)
-        for file in os.listdir(os.path.join(CURRENT_DIR, 'docs', 'faces')):
+        for file in os.listdir(os.path.join(CURRENT_DIR, 'faces')):
             if file[-3:] == 'jpg':
                 version_id = file.split('-')[0]
                 record = (item for item in records if item["version_id"] == version_id).next()
